@@ -6,45 +6,228 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- style  -->
+    <!-- icon -->
+    <link rel="stylesheet" href="/icon/cdn.jsdelivr.net_npm_bootstrap-icons@1.10.5_font_bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- nav header-->
+    <nav class=" navbar navbar_color navbar-expand-lg d-lg-block d-none bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div class="me-md-auto  nav">
+            <a class="text-white nav-link" href="#"><i class="bi bi-telephone-fill"></i> (+855) 89 43 43 98</a>
+            <a class="text-white nav-link" href="#"><i class="bi bi-envelope-fill"></i> info@sadi.edu.kh</a>
+          </div>
+
+     
+        <div class="navbar-nav mb-2 ms-auto mb-lg-0" >
+          <ul class=" navbar-nav mb-2 ms-auto mb-lg-0">
+            <li class=" d-flex align-items-center text-white me-3">
+                <i class="bi bi-house-door-fill align-items-center"></i>
+                <a class="nav-link active text-white " aria-current="page" href="#">HOME</a>
+            </li>
+            
+            <li class=" d-flex align-items-center text-white me-3 ">
+              <i class="bi bi-book"></i>
+              <a class="nav-link text-white" href="#"> LIBRARY</a>
+            </li>
+
+            <li class="d-flex align-items-center text-white me-3">
+              <i class="bi bi-person-lines-fill"></i>
+              <a class="nav-link text-white" href="#"> CONTACT</a>
+            </li> 
+            
+            <button class="btn btn-danger">login</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav1 header -->
+
+
+
+
+
+  <nav class="px-3 navbar  navbar-light bg-light border-bottom">
+      <div class="navbar-expand-lg container-fluid">
+        <!-- humberger start  -->
+        <button class="navbar-toggler text-white" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent1"  
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button> 
+        <a class=" navbar-brand " href="#"><img src="/images/logo.jpg" class="img-fluid" width="100px" alt=""></a>
+        <!--end humberger start  -->
+
+
+
+        <!-- hambergur end  -->
+        <button class="  navbar-toggler text-white" 
+        type="button" 
+        data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent3"  
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button> 
+         <!-- hambergur end  -->
+
+
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent1">
+          <div class=" navbar  d-lg-none bg_primary text-white px-5">
+            <a class=" nav-link" href="#"><i class="bi bi-telephone-fill"></i> (+855) 89 43 43 98</a>
+            <a class=" nav-link" href="#"><i class="bi bi-envelope-fill"></i> info@sadi.edu.kh</a>
+          </div>
+          <!-- navbar 1  -->
+          <ul class="navbar-nav  ms-auto d-lg-none ">
+              <li class="text_primary d-flex align-items-center me-3">
+                  <i class="bi bi-house-door-fill me-1"></i>
+                  <a class="text_primary nav-link " aria-current="page" href="#">HOME</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              
+              <li class="d-flex align-items-center  me-3">
+                <i class="text_primary bi bi-book me-1"></i>
+                <a class="nav-link text_primary" href="#"> LIBRARY</a>
+              </li>
+
+              <li class="d-flex align-items-center  me-3">
+                <i class="text_primary bi bi-person-lines-fill me-1"></i>
+                <a class="text_primary nav-link " href="#"> CONTACT</a>
+              </li> 
+          <button class="btn btn-danger w-100 d-lg-none">login</button>
+          </ul>
+
+    <!-- navbar 2  -->
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-info-circle-fill"></i> ABOUT AI</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Logo</a>
+                  <a class="dropdown-item" href="#">Student Uniform</a>
+                  <a class="dropdown-item" href="#">Management</a>
+                </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-clipboard-data-fill"></i> PROGRAMS</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">Undergraduate</a>
+                  <a class="dropdown-item" href="#">Graduate</a>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+          
+            <li class="nav-item dropdown">
+              <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FACULTIES</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Management</a>
+                <a class="dropdown-item" href="#">Information Teachnology</a>
+                <a class="dropdown-item" href="#">Art & Language</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            
+          </form>
         </div>
-      </nav>
+
+      <!-- navbar 3  -->
+    <div class="collapse navbar-collapse   " id="navbarSupportedContent3">
+      <ul class="navbar-nav d-lg-none  me-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+          <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-info-circle-fill"></i> EVENT & ACTIVITIES</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Social Charity</a>
+            <a class="dropdown-item" href="#">Sport</a>
+            <a class="dropdown-item" href="#">Entertainment</a>
+            <a class="dropdown-item" href="#">Field Trips</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-clipboard-data-fill"></i>SUPPORTING PROGRAMS</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Support Center</a>
+            <a class="dropdown-item" href="#">Student Club</a>
+            <a class="dropdown-item" href="#">Workshop</a>
+            <a class="dropdown-item" href="#">Internship</a>
+          </div>
+        </li>
+
+      <li class="nav-item dropdown">
+        <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-mortarboard-fill me-2"></i> ACADEMIC AFFAIR</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Assesment</a>
+          <a class="dropdown-item" href="#">Grading System</a>
+          <a class="dropdown-item" href="#">Student Result</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-megaphone-fill me-2"></i> ANNOUNCEMENT</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Management</a>
+          <a class="dropdown-item" href="#">Information Teachnology</a>
+          <a class="dropdown-item" href="#">Art & Language</a>
+        </div>
+      </li>
+    </ul>
+    </div>
+    </div>
+
+
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg">
+    <button class="  navbar-toggler text-white" 
+    type="button" 
+    data-bs-toggle="collapse"
+     data-bs-target="#navbarSupportedContent4"  
+     aria-expanded="false" 
+     aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button> 
+    <div class="   d-lg-none collapse navbar-collapse " id="navbarSupportedContent4">
+      <ul class="d-flex navbar-nav  mx-auto mt-2 mt-lg-0">
+        <li class="mx-2 nav-item dropdown">
+          <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-info-circle-fill"></i> ABOUT AI</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Logo</a>
+            <a class="dropdown-item" href="#">Student Uniform</a>
+            <a class="dropdown-item" href="#">Management</a>
+          </div>
+        </li>
+        <li class="mx-2 nav-item dropdown">
+          <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-clipboard-data-fill"></i> PROGRAMS</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Undergraduate</a>
+            <a class="dropdown-item" href="#">Graduate</a>
+          </div>
+        </li>
+    
+      <li class="mx-2 nav-item dropdown">
+        <a class="text_primary  nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FACULTIES</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Management</a>
+          <a class="dropdown-item" href="#">Information Teachnology</a>
+          <a class="dropdown-item" href="#">Art & Language</a>
+        </div>
+      </li>
+    </ul>
+    </div>
+
+  </nav>
+   <!-- hambergur end  -->
+
+
+
 
       <swiper-container 
       class="mySwiper" 
@@ -61,9 +244,8 @@
       <swiper-slide><img src="/images/slides/pexels-johannes-plenio-1500523.jpg" alt=""></swiper-slide>
       <swiper-slide><img src="/images/slides/pexels-lokesh-vanapalli-569471.jpg" alt=""></swiper-slide>
       <swiper-slide><img src="/images/slides/pexels-santosh-maharjan-19697.jpg"></swiper-slide>
-
       </swiper-container>
-      
+       
       <script>
         // swiper element
         const swiperEl = document.querySelector('swiper-container');
