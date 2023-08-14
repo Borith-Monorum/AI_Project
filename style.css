@@ -1,24 +1,51 @@
+:root{
+    --primary: #AEA000;
+    --secondary: #8F8401;
+    --blue: #10006D;
+    --text_secondary: #333;
+}
 *{
-    font-family: 'poppins'  sans-serif;
+    font-family: 'poppins' sans-serif;
 }
 .text_primary{
-    color:#AEA000;
+    color:var(--primary);
 }
 .bg_primary{
-    background-color:#AEA000;
+    background-color:var(--primary);
 }
 .text_secondary{
-    color:#8F8401;
+    color:var(--secondary);
 }
 .bg_secondary{
-    color:#8F8401;
+    background-color:var(--secondary);
 }
 .border_bottom{
-    border: 1px solid #8F8401;
+    border: 1px solid var(--secondary);
+}
+.title{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: var(--primary);
+    font-size: 48px;
+    font-weight:bold;
+    text-align: center;
+}
+.desc{
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 50px;
+    color: var(--text_secondary);
+}
+
+.marks{
+color: var(--blue);
+font-weight: bold;
 }
 .mySwiper{
     width: 100%;
-    height: 100%;
+    height: 100%;  
 }
 .swiper-slide{
     text-align:center;
@@ -29,8 +56,9 @@
 .mySwiper img{
 object-fit: cover;
 object-position: center;
-display: block;
-height: 500px;
+/* display: block; */
+height:100%;
+/* height: 500px; */
 width: 100%;
 }
 
@@ -38,3 +66,64 @@ width: 100%;
     background: linear-gradient(180deg, #8A7F02 0%, #A19503 48.96%, #8D8202 100%);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
 }
+
+
+
+
+
+/* about AI  */
+.about_ai{
+    display: flex;
+
+    width: 100%;
+    height:500px;
+
+    background: linear-gradient(180deg, #FFF 50%, rgba(255, 255, 255, 0.00) 100%), url('/images/about_ai.png'), lightgray 50% / cover no-repeat  ;
+    background-blend-mode: normal, darken;
+    opacity: .8;
+}
+/* about AI  */
+
+
+/* partnership  */
+.slide_partner{
+    height: 100px;
+}
+.part
+/*end partnership  */
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .banner{
+        height: 300px;
+    }
+
+}
+@media (min-width: 992px) {
+    .banner{
+        height: 500px;
+    }
+    .desc{
+        text-align: center;
+        font-size: 18px;
+        margin: 0 100px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .banner{
+        height: 700px;
+    }
+
+}
+
+
+@media (min-width: 1400px) {}
