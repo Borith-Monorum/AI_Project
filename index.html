@@ -49,7 +49,7 @@
 
 
 
-  <nav class="px-3 navbar  navbar-light bg-light border-bottom">
+  <nav class="sticky-top px-3 py-0 my-0 navbar  navbar-light bg-light border-bottom">
       <div class="navbar-expand-lg container-fluid">
         <!-- humberger start  -->
         <button class="navbar-toggler text-white" 
@@ -60,7 +60,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-white"></span>
         </button> 
-        <a class=" navbar-brand d-lg-none" href="#"><img src="/images/logo.jpg" class="img-fluid" width="100px" alt=""></a>
+        <a class=" navbar-brand d-lg-none" href="#"><img src="/images/logo.png" class="img-fluid" width="90px" alt=""></a>
         <!--end humberger start  -->
 
 
@@ -102,7 +102,7 @@
           </ul>
 
     <!-- navbar 2  -->
-    <a class=" navbar-brand d-none d-lg-block" href="#"><img src="/images/logo.jpg" class="img-fluid" width="100px" alt=""></a>
+    <a class=" navbar-brand d-none d-lg-block" href="#"><img src="/images/logo.png" class="img-fluid" width="100px" alt=""></a>
 
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
               <li class="nav-item dropdown">
@@ -286,27 +286,43 @@
   <swiper-container 
   id="partner"
   class="mySwiper" 
-  pagination="true"
-  navigation="true"
-  pagination-clickable="true" 
   space-between="30"
   centered-slides="false"
-  autoplay-delay="2500" 
+  autoplay-delay="1000" 
   autoplay-disable-on-interaction="false"
-  space-between="30"
   loop="true">
 
   <swiper-slide class="partnership"><img src="/images/Partnership/AGA.png" alt=""></swiper-slide>
   <swiper-slide class="partnership"><img src="/images/Partnership/AGD.png" alt=""></swiper-slide>
   <swiper-slide class="partnership"><img src="/images/Partnership/AGE.png" alt=""></swiper-slide>
   <swiper-slide class="partnership"><img src="/images/Partnership/Ags-security.png" alt=""></swiper-slide>
-  <swiper-slide class="partnership"><img src="/images/Partnership/" alt=""></swiper-slide>
+  <swiper-slide class="partnership"><img src="/images/Partnership/iAGS.png" alt=""></swiper-slide>
 
   </swiper-container>
 </div>
 <!--end partner  -->
 
 
+<!-- footer  -->
+<footer class="footer">
+  <div class="social">
+
+  </div>
+  <div class="wrap d-flex justify-content-between">
+      <div class="start align-self-center">
+        <span>test</span>
+    </div>
+    <div class="center">
+      <img src="/images/logo.png" width="120px" alt="">
+    </div>
+    <div class="end align-self-center">
+      <span>test</span>
+    </div>
+  </div>
+
+
+</footer>
+<!-- end footer  -->
     </body>
       <script>
         // swiper element
@@ -334,15 +350,19 @@
         const swiperE2 = document.getElementById('partner')
         const partners = {
           slidesPerView: 2,
+          spacebetween: 10,
           breakpoints: {
             640: {
-              slidesPerView:2,
+              slidesPerView:3,
+              spacebetween: 30,
             },
             1024: {
               slidesPerView: 4,
+              spacebetween: 40,
             },
             1440:{
-              slidesPerView: 5,
+              slidesPerView: 6,
+              spacebetween: 50,
             }
           },
           on: {
